@@ -9,16 +9,15 @@ authorize: ~/.ssh/id_rsa.pub
 keys:
     - ~/.ssh/id_rsa
 
-folders:
-    - map: ~/Code
-      to: /home/vagrant/Code
-
 sites:
-    - map: homestead.app
-      to: /home/vagrant/Code/Laravel/public
+    - map: diaper.dev
+      to: /vagrant/diaper/public
+    - map: tenant.dev
+      to: /vagrant/tenant/public
 
 databases:
-    - homestead
+    - tenant
+
 
 # blackfire:
 #     - id: foo

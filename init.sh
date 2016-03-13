@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-homesteadRoot=~/.homestead
-
-mkdir -p "$homesteadRoot"
+homesteadRoot=/var/www/homestead/vagrant
 
 cp -i src/stubs/Homestead.yaml "$homesteadRoot/Homestead.yaml"
 cp -i src/stubs/after.sh "$homesteadRoot/after.sh"
