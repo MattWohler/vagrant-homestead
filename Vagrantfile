@@ -13,7 +13,7 @@ require File.expand_path(File.dirname(__FILE__) + '/scripts/homestead.rb')
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-   config.vm.synced_folder "../", "/vagrant", type: "nfs"
+   config.vm.synced_folder "../", "/vagrant"
 
     if File.exists? aliasesPath then
         config.vm.provision "file", source: aliasesPath, destination: "~/.bash_aliases"
